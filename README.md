@@ -1,6 +1,6 @@
 # GRDB
 
-Xcframework wrapper for KeychainAccess.
+Xcframework wrapper for GRDB.swift.
 
 iOS, macOS, and watchOS platforms are included.
 
@@ -62,7 +62,7 @@ import GRDB
 - Fix inclusion of tvOS
 - Add debug symbols to final xcframework
 - Separate fastlane config into own file, then can move the lane into the MobileFastFile
-- Create nightly task to chek latest published version of 3rd party library
+- Create nightly task to check latest published version of 3rd party library
 - Make it work with SPM
 
 
