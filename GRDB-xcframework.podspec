@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name                = 'GRDB-xcframework'
   
   s.module_name         = 'GRDB'
-  s.version             = '5.5.0'
+  s.version             = '5.6.0'
 
   s.summary             = 'A toolkit for SQLite databases, with a focus on application development.'
   s.description         = <<-DESC
@@ -13,8 +13,7 @@ Pod::Spec.new do |s|
   s.license             = 'MIT'
   s.author              = { 'Gwendal Roué' => 'gr@pierlis.com' }
 
-  s.source              = { :git => 'git@github.com:WW-Digital/ios-GRDB.git', :tag => "#{s.version}" }
-
+  s.source              = { :http => 'https://github.com/WW-Digital/ios-GRDB/releases/download/5.6.0/GRDB.xcframework.zip', :sha256 => 'e0c133bb6b4f32167d5cc8c3dceaefa79b1a264a6e79d588a3703f5819ef0797' }
   s.requires_arc        = true
   
   s.vendored_frameworks = 'GRDB.xcframework'
