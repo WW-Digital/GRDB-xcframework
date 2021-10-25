@@ -123,6 +123,35 @@ Queries App Center API for WW apps and returns array of json hashes
 fastlane list_appcenter_apps
 ```
 Lists all app center apps by name, with the last build date for each
+### list_deletable_appcenter_apps
+```
+fastlane list_deletable_appcenter_apps
+```
+Lists all 'deletable' app center apps by name, with the last build date for each.
+
+A deletable app is >= 3 weeks old, and has a Jira ticket number in the name.
+
+
+
+Options:
+
+    platform - (optional) iOS or Android.
+
+               Defaults to iOS.
+
+  send_slack - (optional) Send a Slack notification with the list.
+
+               The channel is dependent on the `platform`.
+
+               Defaults to true when running in CI.
+
+Sample usage:
+
+  fastlane list_deletable_appcenter_apps
+
+  fastlane list_deletable_appcenter_apps platform:Android
+
+  fastlane list_deletable_appcenter_apps platform:Android send_slack:true
 ### create_appcenter_app
 ```
 fastlane create_appcenter_app
@@ -337,6 +366,11 @@ Post UI test report URL to Slack
 fastlane ios report_url
 ```
 Get matching report URL from CircleCI build artifacts
+### ios trigger_register_adhoc_device
+```
+fastlane ios trigger_register_adhoc_device
+```
+Trigger adhoc device registration on remote CI
 ### ios register_adhoc_device
 ```
 fastlane ios register_adhoc_device
@@ -426,6 +460,6 @@ Success messages
 
 ----
 
-This README.md is auto-generated and will be re-generated every time [fastlane](https://fastlane.tools) is run.
+This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
 More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
 The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
