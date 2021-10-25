@@ -7,6 +7,8 @@ GRDB adheres to [Semantic Versioning](https://semver.org/), with one exception: 
 
 #### 5.x Releases
 
+- `5.7.x` Releases - [5.7.0](#570) | [5.7.1](#571) | [5.7.2](#572)
+- `5.6.x` Releases - [5.6.0](#560)
 - `5.5.x` Releases - [5.5.0](#550)
 - `5.4.x` Releases - [5.4.0](#540)
 - `5.3.x` Releases - [5.3.0](#530)
@@ -70,6 +72,86 @@ GRDB adheres to [Semantic Versioning](https://semver.org/), with one exception: 
 
 - [0.110.0](#01100), ...
 
+
+#### 5.7.2
+
+- **Fixed**: Really fix breaking change and restore `SQLLiteral` as a deprecated alias for `SQL`.
+
+#### 5.7.1
+
+- **Fixed**: Fix breaking change and restore `SQLLiteral` as a deprecated alias for `SQL`.
+
+## 5.7.0
+
+Released March 28, 2021 &bull; [diff](https://github.com/groue/GRDB.swift/compare/v5.6.0...v5.7.0)
+
+- **New**: [#947](https://github.com/groue/GRDB.swift/pull/947) by [@chrisballinger](https://github.com/chrisballinger): Allow access to Encoder from KeyedEncodingContainer
+
+- **New**: Record types that adopt the standard [Identifiable](https://developer.apple.com/documentation/swift/identifiable) protocol have gained type-safe methods that deal with the primary key. For example:
+    
+    ```swift
+    let player = try Player.fetchOne(db, id: 42)
+    try Player.deleteAll(db, ids: [1, 2, 3])
+    ```
+    
+    See the new [Identifiable Records](README.md#identifiable-records) documentation chapter for more information.
+
+- **New**: `SQLLiteral` has more use cases than initialy expected, and is renamed `SQL`.
+
+- **New**: [`SQL` literal](Documentation/SQLInterpolation.md#sql-literal) can now be directly used as an expression, an ordering term, or a selection item.:
+    
+    ```swift
+    let name = "O'Brien"
+    let request = Player
+        .select(SQL("id, score"), ...)
+        .filter(SQL("name = \(name)") && ...)
+        .order(SQL("score DESC"), ...)
+    ```
+
+- **New**: Table creation DSL now supports columns and constraints defined with raw SQL String or [SQL literal](Documentation/SQLInterpolation.md#sql-literal):
+    
+    ```swift
+    try db.create(table: "player") do { t in
+        t.column(sql: "id INTEGER PRIMARY KEY AUTOINCREMENT")
+        t.column(literal: "name TEXT DEFAULT \("Anonymous")")
+        t.constraint(sql: "CHECK (LENGTH(name) > 0)")
+        t.constraint(literal: "CHECK (LENGTH(name) <= \(100))")
+    }
+    ```
+
+- **New**: Prepared statements can profit from [SQL Interpolation](Documentation/SQLInterpolation.md):
+    
+    ```swift
+    let updateStatement = try db.makeUpdateStatement(literal: "INSERT ...")
+    let selectStatement = try db.makeSelectStatement(literal: "SELECT ...")
+    //                                               ~~~~~~~
+    ```
+
+- **New**: [DatabaseMigrator](Documentation/Migrations.md#asynchronous-migrations) can now asynchronously migrate a database. A Combine publisher is also available.
+
+- **New**: Added support for the `EXISTS` and `NOT EXISTS` subquery operators. See the updated [SQL Operators](README.md#sql-operators) documentation.
+
+- **New**: `Foundation.Decimal` can now be stored in the database, and all Foundation number types can be decoded from decimal numbers stored as strings. See the [NSNumber, NSDecimalNumber, and Decimal](README.md#nsnumber-nsdecimalnumber-and-decimal) chapter for details.
+
+## 5.6.0
+
+Released March 12, 2021 &bull; [diff](https://github.com/groue/GRDB.swift/compare/v5.5.0...v5.6.0)
+
+- **Fixed**: [#933](https://github.com/groue/GRDB.swift/pull/933): Fix DatabaseMigrator.eraseDatabaseOnSchemaChange in the context of shared databases
+
+- **Fixed**: [#934](https://github.com/groue/GRDB.swift/pull/934): Fix a crash in the ValueObservation publisher
+
+- **New**: [#936](https://github.com/groue/GRDB.swift/pull/936): Complete Associations and the DerivableRequest Protocol
+
+- **New**: Database cursors can feed more standard Swift collections: `Array(cursor, minimumCapacity: ...)`, `Dictionary(uniqueKeysWithValues: cursor)`, etc (see [Cursors](README.md#cursors)).
+
+- **Documentation update**: The [Associations Guide](Documentation/AssociationsBasics.md) has gained a new [Further Refinements to Associations](Documentation/AssociationsBasics.md#further-refinements-to-associations) chapter which shows the new association methods brought by [#936](https://github.com/groue/GRDB.swift/pull/936).
+
+- **Documentation update**: The [Good Practices for Designing Record Types](Documentation/GoodPracticesForDesigningRecordTypes.md) guide has an updated [Define Record Requests](Documentation/GoodPracticesForDesigningRecordTypes.md#define-record-requests) chapter, now that the `DerivableRequest` protocol has access to `limit`, `distinct`, `group`, `having`, association aggregates, and common table expressions.
+
+- **Documentation update**: The [Good Practices for Designing Record Types](Documentation/GoodPracticesForDesigningRecordTypes.md) guide has a new chapter of good practices: [Record Types Hide Intimate Database Details](Documentation/GoodPracticesForDesigningRecordTypes.md#record-types-hide-intimate-database-details).
+
+- **Documentation update**: A new [Single-Row Tables](Documentation/SingleRowTables.md) guide provides guidance for designing tables that store configuration values, user preferences, and generally some global application state.
 
 ## 5.5.0
 

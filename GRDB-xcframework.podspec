@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name                = 'GRDB-xcframework'
   
   s.module_name         = 'GRDB'
-  s.version             = '5.5.0'
+  s.version             = '5.7.2'
 
   s.summary             = 'A toolkit for SQLite databases, with a focus on application development.'
   s.description         = <<-DESC
