@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/GRDB-Swift.h</key>
 		<data>
-		faLj2+rvoWvGVqN8C0GB70zo8Ug=
+		hU1ChsHphIPSAVPce12UKhK14hI=
 		</data>
 		<key>Headers/GRDB.h</key>
 		<data>
@@ -18,79 +18,79 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JJA+GODCrsKPdE71ZDwlpvXmzwI=
+		3jPNtpFYLjXHmV0cRIa81PqJVdA=
 		</data>
 		<key>Modules/GRDB.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ZApVxMzNWkfPmJg8kUyMulxtzuw=
+		xg4z8VqA+JWGFMEiy7k02s+7c/E=
 		</data>
 		<key>Modules/GRDB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		grAqI1gdX20hbe0AAZqR+ff511E=
+		6bebark+4pCtuX1RF4Dg0zZdbl4=
 		</data>
 		<key>Modules/GRDB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Ye7pSKVQsmbOq/Wf22dvyloODXo=
+		h9bRO0TbXnu4n+ntBmqfeXb8AiY=
 		</data>
 		<key>Modules/GRDB.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		ZApVxMzNWkfPmJg8kUyMulxtzuw=
+		xg4z8VqA+JWGFMEiy7k02s+7c/E=
 		</data>
 		<key>Modules/GRDB.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		grAqI1gdX20hbe0AAZqR+ff511E=
+		6bebark+4pCtuX1RF4Dg0zZdbl4=
 		</data>
 		<key>Modules/GRDB.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Ye7pSKVQsmbOq/Wf22dvyloODXo=
+		h9bRO0TbXnu4n+ntBmqfeXb8AiY=
 		</data>
 		<key>Modules/GRDB.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7x1peqrN29R5N9mubPZBRlS1zfk=
+		LYfwLzmnEqBX81vVo8JtnNwdJUE=
 		</data>
 		<key>Modules/GRDB.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dBlpxefNXJ7aZnOZ4KGoPdQsPpk=
+		FjXkeQxOVpByTxWoyfsPNneh1xo=
 		</data>
 		<key>Modules/GRDB.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O+w+axqtnPuTxfl52/VxZ9Ole1c=
+		vvpRVBMJ4UkeNs/49ZSrp/LQ43I=
 		</data>
 		<key>Modules/GRDB.swiftmodule/i386.swiftdoc</key>
 		<data>
-		7x1peqrN29R5N9mubPZBRlS1zfk=
+		LYfwLzmnEqBX81vVo8JtnNwdJUE=
 		</data>
 		<key>Modules/GRDB.swiftmodule/i386.swiftinterface</key>
 		<data>
-		dBlpxefNXJ7aZnOZ4KGoPdQsPpk=
+		FjXkeQxOVpByTxWoyfsPNneh1xo=
 		</data>
 		<key>Modules/GRDB.swiftmodule/i386.swiftmodule</key>
 		<data>
-		O+w+axqtnPuTxfl52/VxZ9Ole1c=
+		vvpRVBMJ4UkeNs/49ZSrp/LQ43I=
 		</data>
 		<key>Modules/GRDB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		L1RgZU3qxgLzBYiWP6t/c0tw+bs=
+		Mm4aCoFNE3tMxQ2Qs9mhSdaqWRE=
 		</data>
 		<key>Modules/GRDB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7WXP9QJ+4gWo6GwrNGVunug/dps=
+		Kq4jBXNYmD4Wyl53J2w9ynOhiDs=
 		</data>
 		<key>Modules/GRDB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CkJ+Sn0YLNIOB0m4u2n7V2VFDFw=
+		/X6Qz6Hf8fBrf67WDbtvzaEKoAc=
 		</data>
 		<key>Modules/GRDB.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		L1RgZU3qxgLzBYiWP6t/c0tw+bs=
+		Mm4aCoFNE3tMxQ2Qs9mhSdaqWRE=
 		</data>
 		<key>Modules/GRDB.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		7WXP9QJ+4gWo6GwrNGVunug/dps=
+		Kq4jBXNYmD4Wyl53J2w9ynOhiDs=
 		</data>
 		<key>Modules/GRDB.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		CkJ+Sn0YLNIOB0m4u2n7V2VFDFw=
+		/X6Qz6Hf8fBrf67WDbtvzaEKoAc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -118,11 +118,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			faLj2+rvoWvGVqN8C0GB70zo8Ug=
+			hU1ChsHphIPSAVPce12UKhK14hI=
 			</data>
 			<key>hash2</key>
 			<data>
-			BxHYK3LoW1uHSQgfhrBj5HYt6cXTK7C0dVt+xjwjFjA=
+			7QgQP2jpya4s5TVxGuMa3fXu9lYX1+EyVUYK7DyOyX4=
 			</data>
 		</dict>
 		<key>Headers/GRDB.h</key>
@@ -140,198 +140,198 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZApVxMzNWkfPmJg8kUyMulxtzuw=
+			xg4z8VqA+JWGFMEiy7k02s+7c/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			n2uhP4uMn7zwgmkRFPlDEqnF5qEytz8Y++sXFu6VAhE=
+			mmXl+Dr9PaTafMEnPwYQwMBOAokuxAmMnF1dTSCv2FM=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			grAqI1gdX20hbe0AAZqR+ff511E=
+			6bebark+4pCtuX1RF4Dg0zZdbl4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ssf+nj2x+sXSr4HXy+wnEAIS8YgRjmOU0pM3PBlkWU=
+			brCkpzXxcABFNjV8crAPmENQtruA1nmv6wb4sju5vHo=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ye7pSKVQsmbOq/Wf22dvyloODXo=
+			h9bRO0TbXnu4n+ntBmqfeXb8AiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ooMS9RK73/4mM2LWhcVQRbolD+ZxZzOk3HMgIckOWuI=
+			0p9M+s5mTWWmeLFiFnvAaLD5olBYGgJ/avmC8kY8B+I=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZApVxMzNWkfPmJg8kUyMulxtzuw=
+			xg4z8VqA+JWGFMEiy7k02s+7c/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			n2uhP4uMn7zwgmkRFPlDEqnF5qEytz8Y++sXFu6VAhE=
+			mmXl+Dr9PaTafMEnPwYQwMBOAokuxAmMnF1dTSCv2FM=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			grAqI1gdX20hbe0AAZqR+ff511E=
+			6bebark+4pCtuX1RF4Dg0zZdbl4=
 			</data>
 			<key>hash2</key>
 			<data>
-			6ssf+nj2x+sXSr4HXy+wnEAIS8YgRjmOU0pM3PBlkWU=
+			brCkpzXxcABFNjV8crAPmENQtruA1nmv6wb4sju5vHo=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ye7pSKVQsmbOq/Wf22dvyloODXo=
+			h9bRO0TbXnu4n+ntBmqfeXb8AiY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ooMS9RK73/4mM2LWhcVQRbolD+ZxZzOk3HMgIckOWuI=
+			0p9M+s5mTWWmeLFiFnvAaLD5olBYGgJ/avmC8kY8B+I=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7x1peqrN29R5N9mubPZBRlS1zfk=
+			LYfwLzmnEqBX81vVo8JtnNwdJUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			a026vqlI2T/BjbLMbobGjZnnp1DVm1prIyl2CNjKQCs=
+			QGLAvDtofwz0CHSrRB42Ztg03Ol/YwkrQjlT9apwFOc=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dBlpxefNXJ7aZnOZ4KGoPdQsPpk=
+			FjXkeQxOVpByTxWoyfsPNneh1xo=
 			</data>
 			<key>hash2</key>
 			<data>
-			S4N/SDbayeZv3iCViTt7Yh+tRncatpDQiNwuFfASrUI=
+			aWXXAhD+Uyi8XqcEvrGe5BDyRdqRCuxldYvFXDTg3e4=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O+w+axqtnPuTxfl52/VxZ9Ole1c=
+			vvpRVBMJ4UkeNs/49ZSrp/LQ43I=
 			</data>
 			<key>hash2</key>
 			<data>
-			TLAmA94XvaxLSg6AM4AqzalBm4spfZRKXTvQPon8ox0=
+			seMs4R0GWzO/Qn6/7TOmcAe6q/auDoWz+kFT9zh8Ajw=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/i386.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7x1peqrN29R5N9mubPZBRlS1zfk=
+			LYfwLzmnEqBX81vVo8JtnNwdJUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			a026vqlI2T/BjbLMbobGjZnnp1DVm1prIyl2CNjKQCs=
+			QGLAvDtofwz0CHSrRB42Ztg03Ol/YwkrQjlT9apwFOc=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/i386.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dBlpxefNXJ7aZnOZ4KGoPdQsPpk=
+			FjXkeQxOVpByTxWoyfsPNneh1xo=
 			</data>
 			<key>hash2</key>
 			<data>
-			S4N/SDbayeZv3iCViTt7Yh+tRncatpDQiNwuFfASrUI=
+			aWXXAhD+Uyi8XqcEvrGe5BDyRdqRCuxldYvFXDTg3e4=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O+w+axqtnPuTxfl52/VxZ9Ole1c=
+			vvpRVBMJ4UkeNs/49ZSrp/LQ43I=
 			</data>
 			<key>hash2</key>
 			<data>
-			TLAmA94XvaxLSg6AM4AqzalBm4spfZRKXTvQPon8ox0=
+			seMs4R0GWzO/Qn6/7TOmcAe6q/auDoWz+kFT9zh8Ajw=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L1RgZU3qxgLzBYiWP6t/c0tw+bs=
+			Mm4aCoFNE3tMxQ2Qs9mhSdaqWRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ful6m6rfKt5jMS7733NnO2QC5nYNbNgDj+q4AzT8+RU=
+			sRb4umb9Qtjvz0x3Gqgauaxf7Qafda5epV5+2SkCLq0=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7WXP9QJ+4gWo6GwrNGVunug/dps=
+			Kq4jBXNYmD4Wyl53J2w9ynOhiDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Pcj7jE0BXUCzPmdjq2M6MjOEp0pmmPXV2a2NdVMKeA=
+			/WG4JxVnc+CVTrCm8zRFM9q5k3kXJ/NRd+GDEBfIx3c=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CkJ+Sn0YLNIOB0m4u2n7V2VFDFw=
+			/X6Qz6Hf8fBrf67WDbtvzaEKoAc=
 			</data>
 			<key>hash2</key>
 			<data>
-			wQKHRs4Ax1bbQ0E8PcHXNBy1F9HgdBGVZH+m8kM6zrk=
+			aFdgbQA6EhVnCLmLtfQ/0mqbFwDfxYYvqFVgW9WL6rs=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L1RgZU3qxgLzBYiWP6t/c0tw+bs=
+			Mm4aCoFNE3tMxQ2Qs9mhSdaqWRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ful6m6rfKt5jMS7733NnO2QC5nYNbNgDj+q4AzT8+RU=
+			sRb4umb9Qtjvz0x3Gqgauaxf7Qafda5epV5+2SkCLq0=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7WXP9QJ+4gWo6GwrNGVunug/dps=
+			Kq4jBXNYmD4Wyl53J2w9ynOhiDs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Pcj7jE0BXUCzPmdjq2M6MjOEp0pmmPXV2a2NdVMKeA=
+			/WG4JxVnc+CVTrCm8zRFM9q5k3kXJ/NRd+GDEBfIx3c=
 			</data>
 		</dict>
 		<key>Modules/GRDB.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CkJ+Sn0YLNIOB0m4u2n7V2VFDFw=
+			/X6Qz6Hf8fBrf67WDbtvzaEKoAc=
 			</data>
 			<key>hash2</key>
 			<data>
-			wQKHRs4Ax1bbQ0E8PcHXNBy1F9HgdBGVZH+m8kM6zrk=
+			aFdgbQA6EhVnCLmLtfQ/0mqbFwDfxYYvqFVgW9WL6rs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

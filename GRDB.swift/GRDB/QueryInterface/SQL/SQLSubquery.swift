@@ -4,18 +4,18 @@ public struct SQLSubquery {
     
     private enum Impl {
         /// A literal SQL query
-        case literal(SQLLiteral)
+        case literal(SQL)
         
-        /// A query interface query
-        case query(SQLQuery)
+        /// A query interface relation
+        case relation(SQLRelation)
     }
     
-    static func literal(_ sqlLiteral: SQLLiteral) -> Self {
+    static func literal(_ sqlLiteral: SQL) -> Self {
         self.init(impl: .literal(sqlLiteral))
     }
     
-    static func query(_ query: SQLQuery) -> Self {
-        self.init(impl: .query(query))
+    static func relation(_ relation: SQLRelation) -> Self {
+        self.init(impl: .relation(relation))
     }
 }
 
@@ -38,7 +38,7 @@ extension SQLSubquery {
     ///     // We know that "SELECT 1 AS a, 2 AS b" selects two columns,
     ///     // so we can find cte columns in the row:
     ///     row.scopes["cte"] // [a:1, b:2]
-    func columnsCount(_ db: Database) throws -> Int {
+    func columnCount(_ db: Database) throws -> Int {
         switch impl {
         case let .literal(sqlLiteral):
             // Compile request. We can freely use the statement cache because we
@@ -48,8 +48,8 @@ extension SQLSubquery {
             let statement = try db.cachedSelectStatement(sql: sql)
             return statement.columnCount
             
-        case let .query(query):
-            return try SQLQueryGenerator(query: query).columnsCount(db)
+        case let .relation(relation):
+            return try SQLQueryGenerator(relation: relation).columnCount(db)
         }
     }
 }
@@ -77,8 +77,8 @@ extension SQLSubquery {
         case let .literal(sqlLiteral):
             return try sqlLiteral.sql(context)
             
-        case let .query(query):
-            return try SQLQueryGenerator(query: query, forSingleResult: false).requestSQL(context)
+        case let .relation(relation):
+            return try SQLQueryGenerator(relation: relation).requestSQL(context)
         }
     }
 }
@@ -114,13 +114,13 @@ extension SQLSubqueryable {
         SQLCollection.subquery(sqlSubquery).contains(element.sqlExpression)
     }
     
-    /// Returns an expression that checks the inclusion of the expression in
-    /// the subquery.
+    /// Returns an expression that is true if and only if the subquery would
+    /// return one or more rows.
     ///
-    ///     // name COLLATE NOCASE IN (SELECT name FROM player)
-    ///     let request = Player.select(Column("name"), as: String.self)
-    ///     let condition = request.contains(Column("name").collating(.nocase))
-    public func contains(_ element: SQLCollatedExpression) -> SQLExpression {
-        SQLCollection.subquery(sqlSubquery).contains(element.sqlExpression)
+    ///     // EXISTS (SELECT * FROM player WHERE name = 'Arthur')
+    ///     let request = Player.filter(Column("name") == "Arthur")
+    ///     let condition = request.exists()
+    public func exists() -> SQLExpression {
+        .exists(sqlSubquery)
     }
 }
